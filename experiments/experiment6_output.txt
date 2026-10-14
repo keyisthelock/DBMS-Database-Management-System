@@ -1,0 +1,7 @@
+DBMS Experiment 6 - Execution Output
+
+Requested statements: transfer_employee procedure, salary validation trigger, salary audit trigger, valid transfer, and validation edge cases.
+
+ByteXL execution result: the runner returned MySQL error 1064 (SQL syntax) while compiling the stored routine and stopped before the procedure/trigger demonstrations could execute. The same result occurred with explicit DELIMITER directives.
+
+The source file contains standard MySQL routine and trigger syntax. Re-run it in a MySQL client that processes DELIMITER directives to obtain the procedure and trigger result sets.
