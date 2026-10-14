@@ -1,6 +1,7 @@
-/* DBMS Practical - Experiment 3
+/* DBMS Practical - Experiment 4: Joins and Subqueries
    Prepared by: Adarsh Tiwari
-   Topic: Employee-Department-Project schema and SQL queries
+   Topic: join types, correlated subqueries, set operations, and EXPLAIN
+   Setup: Employee-Department-Project tables and sample rows are included as input data
    Dialect: MySQL 8
 */
 
