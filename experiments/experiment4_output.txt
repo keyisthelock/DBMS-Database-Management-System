@@ -1,0 +1,236 @@
+DBMS Experiment 4 - Execution Output
+
++--------+----------------+-----------------+-----------+
+| emp_id | full_name      | department_name | salary    |
++--------+----------------+-----------------+-----------+
+|   1002 | Aarav Sharma   | Engineering     |  72000.00 |
+|   1001 | Adarsh Tiwari  | Engineering     |  68000.00 |
+|   1003 | Ananya Verma   | Engineering     |  91000.00 |
+|   1005 | Isha Gupta     | Engineering     |  83000.00 |
+|   1006 | Kabir Patel    | Engineering     | 105000.00 |
+|   1004 | Rohan Singh    | Engineering     |  61000.00 |
+|   1020 | Kunal Shah     | Finance         |  76000.00 |
+|   1024 | Naveen Gill    | Finance         |  79000.00 |
+|   1021 | Pooja Mishra   | Finance         |  99000.00 |
+|   1023 | Ritu Bansal    | Finance         |  64000.00 |
+|   1022 | Sameer Ali     | Finance         |  71000.00 |
+|   1019 | Simran Kaur    | Finance         |  60000.00 |
+|   1018 | Amit Roy       | Human Resources |  55000.00 |
+|   1017 | Neha Sinha     | Human Resources |  59000.00 |
+|   1013 | Priya Nair     | Human Resources |  57000.00 |
+|   1014 | Rahul Bose     | Human Resources |  52000.00 |
+|   1015 | Tanya Kapoor   | Human Resources |  88000.00 |
+|   1016 | Yash Kulkarni  | Human Resources |  63000.00 |
+|   1025 | Aditi Sen      | Research        |  67000.00 |
+|   1030 | Aditya Menon   | Research        |  95000.00 |
+|   1027 | Kavya Iyer     | Research        |  74000.00 |
+|   1026 | Manav Arora    | Research        |  92000.00 |
+|   1028 | Siddharth Jain | Research        | 108000.00 |
+|   1029 | Zoya Ahmed     | Research        |  69000.00 |
+|   1008 | Arjun Mehta    | Sales           |  62000.00 |
+|   1010 | Dev Malhotra   | Sales           |  51000.00 |
+|   1007 | Meera Joshi    | Sales           |  54000.00 |
+|   1011 | Nisha Rao      | Sales           |  98000.00 |
+|   1009 | Sana Khan      | Sales           |  78000.00 |
+|   1012 | Vikram Das     | Sales           |  65000.00 |
++--------+----------------+-----------------+-----------+
++-----------------+--------+----------------+
+| department_name | emp_id | full_name      |
++-----------------+--------+----------------+
+| Engineering     |   1002 | Aarav Sharma   |
+| Engineering     |   1001 | Adarsh Tiwari  |
+| Engineering     |   1003 | Ananya Verma   |
+| Engineering     |   1005 | Isha Gupta     |
+| Engineering     |   1006 | Kabir Patel    |
+| Engineering     |   1004 | Rohan Singh    |
+| Finance         |   1020 | Kunal Shah     |
+| Finance         |   1024 | Naveen Gill    |
+| Finance         |   1021 | Pooja Mishra   |
+| Finance         |   1023 | Ritu Bansal    |
+| Finance         |   1022 | Sameer Ali     |
+| Finance         |   1019 | Simran Kaur    |
+| Human Resources |   1018 | Amit Roy       |
+| Human Resources |   1017 | Neha Sinha     |
+| Human Resources |   1013 | Priya Nair     |
+| Human Resources |   1014 | Rahul Bose     |
+| Human Resources |   1015 | Tanya Kapoor   |
+| Human Resources |   1016 | Yash Kulkarni  |
+| Research        |   1025 | Aditi Sen      |
+| Research        |   1030 | Aditya Menon   |
+| Research        |   1027 | Kavya Iyer     |
+| Research        |   1026 | Manav Arora    |
+| Research        |   1028 | Siddharth Jain |
+| Research        |   1029 | Zoya Ahmed     |
+| Sales           |   1008 | Arjun Mehta    |
+| Sales           |   1010 | Dev Malhotra   |
+| Sales           |   1007 | Meera Joshi    |
+| Sales           |   1011 | Nisha Rao      |
+| Sales           |   1009 | Sana Khan      |
+| Sales           |   1012 | Vikram Das     |
++-----------------+--------+----------------+
++-----------------+----------------+----------------+
+| department_name | employee_one   | employee_two   |
++-----------------+----------------+----------------+
+| Engineering     | Aarav Sharma   | Ananya Verma   |
+| Engineering     | Aarav Sharma   | Isha Gupta     |
+| Engineering     | Aarav Sharma   | Kabir Patel    |
+| Engineering     | Aarav Sharma   | Rohan Singh    |
+| Engineering     | Adarsh Tiwari  | Aarav Sharma   |
+| Engineering     | Adarsh Tiwari  | Ananya Verma   |
+| Engineering     | Adarsh Tiwari  | Isha Gupta     |
+| Engineering     | Adarsh Tiwari  | Kabir Patel    |
+| Engineering     | Adarsh Tiwari  | Rohan Singh    |
+| Engineering     | Ananya Verma   | Isha Gupta     |
+| Engineering     | Ananya Verma   | Kabir Patel    |
+| Engineering     | Ananya Verma   | Rohan Singh    |
+| Engineering     | Isha Gupta     | Kabir Patel    |
+| Engineering     | Rohan Singh    | Isha Gupta     |
+| Engineering     | Rohan Singh    | Kabir Patel    |
+| Finance         | Kunal Shah     | Naveen Gill    |
+| Finance         | Kunal Shah     | Pooja Mishra   |
+| Finance         | Kunal Shah     | Ritu Bansal    |
+| Finance         | Kunal Shah     | Sameer Ali     |
+| Finance         | Pooja Mishra   | Naveen Gill    |
+| Finance         | Pooja Mishra   | Ritu Bansal    |
+| Finance         | Pooja Mishra   | Sameer Ali     |
+| Finance         | Ritu Bansal    | Naveen Gill    |
+| Finance         | Sameer Ali     | Naveen Gill    |
+| Finance         | Sameer Ali     | Ritu Bansal    |
+| Finance         | Simran Kaur    | Kunal Shah     |
+| Finance         | Simran Kaur    | Naveen Gill    |
+| Finance         | Simran Kaur    | Pooja Mishra   |
+| Finance         | Simran Kaur    | Ritu Bansal    |
+| Finance         | Simran Kaur    | Sameer Ali     |
+| Human Resources | Neha Sinha     | Amit Roy       |
+| Human Resources | Priya Nair     | Amit Roy       |
+| Human Resources | Priya Nair     | Neha Sinha     |
+| Human Resources | Priya Nair     | Rahul Bose     |
+| Human Resources | Priya Nair     | Tanya Kapoor   |
+| Human Resources | Priya Nair     | Yash Kulkarni  |
+| Human Resources | Rahul Bose     | Amit Roy       |
+| Human Resources | Rahul Bose     | Neha Sinha     |
+| Human Resources | Rahul Bose     | Tanya Kapoor   |
+| Human Resources | Rahul Bose     | Yash Kulkarni  |
+| Human Resources | Tanya Kapoor   | Amit Roy       |
+| Human Resources | Tanya Kapoor   | Neha Sinha     |
+| Human Resources | Tanya Kapoor   | Yash Kulkarni  |
+| Human Resources | Yash Kulkarni  | Amit Roy       |
+| Human Resources | Yash Kulkarni  | Neha Sinha     |
+| Research        | Aditi Sen      | Aditya Menon   |
+| Research        | Aditi Sen      | Kavya Iyer     |
+| Research        | Aditi Sen      | Manav Arora    |
+| Research        | Aditi Sen      | Siddharth Jain |
+| Research        | Aditi Sen      | Zoya Ahmed     |
+| Research        | Kavya Iyer     | Aditya Menon   |
+| Research        | Kavya Iyer     | Siddharth Jain |
+| Research        | Kavya Iyer     | Zoya Ahmed     |
+| Research        | Manav Arora    | Aditya Menon   |
+| Research        | Manav Arora    | Kavya Iyer     |
+| Research        | Manav Arora    | Siddharth Jain |
+| Research        | Manav Arora    | Zoya Ahmed     |
+| Research        | Siddharth Jain | Aditya Menon   |
+| Research        | Siddharth Jain | Zoya Ahmed     |
+| Research        | Zoya Ahmed     | Aditya Menon   |
+| Sales           | Arjun Mehta    | Dev Malhotra   |
+| Sales           | Arjun Mehta    | Nisha Rao      |
+| Sales           | Arjun Mehta    | Sana Khan      |
+| Sales           | Arjun Mehta    | Vikram Das     |
+| Sales           | Dev Malhotra   | Nisha Rao      |
+| Sales           | Dev Malhotra   | Vikram Das     |
+| Sales           | Meera Joshi    | Arjun Mehta    |
+| Sales           | Meera Joshi    | Dev Malhotra   |
+| Sales           | Meera Joshi    | Nisha Rao      |
+| Sales           | Meera Joshi    | Sana Khan      |
+| Sales           | Meera Joshi    | Vikram Das     |
+| Sales           | Nisha Rao      | Vikram Das     |
+| Sales           | Sana Khan      | Dev Malhotra   |
+| Sales           | Sana Khan      | Nisha Rao      |
+| Sales           | Sana Khan      | Vikram Das     |
++-----------------+----------------+----------------+
++----------------+-----------------+----------------------+
+| full_name      | project_name    | project_role         |
++----------------+-----------------+----------------------+
+| Adarsh Tiwari  | Campus Connect  | Database Analyst     |
+| Arjun Mehta    | Campus Connect  | Sales Consultant     |
+| Dev Malhotra   | Campus Connect  | Sales Coordinator    |
+| Yash Kulkarni  | Campus Connect  | Training Coordinator |
+| Zoya Ahmed     | Campus Connect  | Researcher           |
+| Aditya Menon   | Customer Portal | Data Scientist       |
+| Arjun Mehta    | Customer Portal | Business Analyst     |
+| Kunal Shah     | Customer Portal | Cost Analyst         |
+| Neha Sinha     | Customer Portal | HR Coordinator       |
+| Nisha Rao      | Customer Portal | Project Sponsor      |
+| Adarsh Tiwari  | Data Warehouse  | Data Consultant      |
+| Aditi Sen      | Data Warehouse  | Researcher           |
+| Ananya Verma   | Data Warehouse  | Technical Lead       |
+| Isha Gupta     | Data Warehouse  | Data Engineer        |
+| Kunal Shah     | Data Warehouse  | Financial Analyst    |
+| Naveen Gill    | Data Warehouse  | Financial Analyst    |
+| Kavya Iyer     | Mobile App      | Research Analyst     |
+| Rahul Bose     | Mobile App      | Recruiter            |
+| Rohan Singh    | Mobile App      | QA Engineer          |
+| Tanya Kapoor   | Mobile App      | Training Lead        |
+| Priya Nair     | Payroll Upgrade | HR Coordinator       |
+| Simran Kaur    | Payroll Upgrade | Accountant           |
+| Tanya Kapoor   | Payroll Upgrade | Project Lead         |
+| Meera Joshi    | Sales Analytics | Sales Coordinator    |
+| Ritu Bansal    | Sales Analytics | Accountant           |
+| Sana Khan      | Sales Analytics | Account Manager      |
+| Vikram Das     | Sales Analytics | Reporting Analyst    |
+| Amit Roy       | Security Audit  | Recruiter            |
+| Isha Gupta     | Security Audit  | Security Analyst     |
+| Kabir Patel    | Security Audit  | Project Lead         |
+| Manav Arora    | Security Audit  | Security Researcher  |
+| Sameer Ali     | Security Audit  | Auditor              |
+| Siddharth Jain | Security Audit  | Project Lead         |
+| Aarav Sharma   | Smart Inventory | Developer            |
+| Ananya Verma   | Smart Inventory | Technical Reviewer   |
+| Manav Arora    | Smart Inventory | Data Scientist       |
+| Pooja Mishra   | Smart Inventory | Project Sponsor      |
+| Vikram Das     | Smart Inventory | Business Analyst     |
++----------------+-----------------+----------------------+
++----------------+-----------------+-----------+
+| full_name      | department_name | salary    |
++----------------+-----------------+-----------+
+| Kabir Patel    | Engineering     | 105000.00 |
+| Ananya Verma   | Engineering     |  91000.00 |
+| Isha Gupta     | Engineering     |  83000.00 |
+| Pooja Mishra   | Finance         |  99000.00 |
+| Naveen Gill    | Finance         |  79000.00 |
+| Kunal Shah     | Finance         |  76000.00 |
+| Tanya Kapoor   | Human Resources |  88000.00 |
+| Yash Kulkarni  | Human Resources |  63000.00 |
+| Siddharth Jain | Research        | 108000.00 |
+| Aditya Menon   | Research        |  95000.00 |
+| Manav Arora    | Research        |  92000.00 |
+| Nisha Rao      | Sales           |  98000.00 |
+| Sana Khan      | Sales           |  78000.00 |
++----------------+-----------------+-----------+
++---------+-----------------+
+| dept_id | department_name |
++---------+-----------------+
+|       1 | Engineering     |
+|       4 | Finance         |
+|       5 | Research        |
+|       2 | Sales           |
++---------+-----------------+
++--------+---------------+
+| emp_id | full_name     |
++--------+---------------+
+|   1001 | Adarsh Tiwari |
++--------+---------------+
++--------+---------------+
+| emp_id | full_name     |
++--------+---------------+
+|   1008 | Arjun Mehta   |
+|   1010 | Dev Malhotra  |
+|   1016 | Yash Kulkarni |
+|   1029 | Zoya Ahmed    |
++--------+---------------+
++----+--------------------+-------+------------+-------+-----------------------------+-----------------------------+---------+----------------------------------+------+----------+-------------+
+| id | select_type        | table | partitions | type  | possible_keys               | key                         | key_len | ref                              | rows | filtered | Extra       |
++----+--------------------+-------+------------+-------+-----------------------------+-----------------------------+---------+----------------------------------+------+----------+-------------+
+|  1 | PRIMARY            | d     | NULL       | index | PRIMARY                     | department_name             | 202     | NULL                             |    5 |   100.00 | Using index |
+|  1 | PRIMARY            | e     | NULL       | ref   | fk_exp3_employee_department | fk_exp3_employee_department | 4       | sandbox_db.d.dept_id |    6 |   100.00 | Using where |
+|  2 | DEPENDENT SUBQUERY | e2    | NULL       | ref   | fk_exp3_employee_department | fk_exp3_employee_department | 4       | sandbox_db.e.dept_id |    6 |   100.00 | NULL        |
++----+--------------------+-------+------------+-------+-----------------------------+-----------------------------+---------+----------------------------------+------+----------+-------------+
