@@ -1,6 +1,7 @@
-/* DBMS Practical - Experiment 3
+/* DBMS Practical - Experiment 6: Stored Procedures and Triggers
    Prepared by: Adarsh Tiwari
-   Topic: Employee-Department-Project schema and SQL queries
+   Topic: validated employee transfer, salary validation, and audit logging
+   Setup: Employee-Department-Project tables and sample rows are included as input data
    Dialect: MySQL 8
 */
 
