@@ -1,0 +1,84 @@
+DBMS Experiment 5 - Execution Output
+
++---------+-----------------+----------------+----------------+--------------+
+| dept_id | department_name | employee_count | average_salary | total_salary |
++---------+-----------------+----------------+----------------+--------------+
+|       1 | Engineering     |              6 |       80000.00 |    480000.00 |
+|       4 | Finance         |              6 |       74833.33 |    449000.00 |
+|       3 | Human Resources |              6 |       62333.33 |    374000.00 |
+|       5 | Research        |              6 |       84166.67 |    505000.00 |
+|       2 | Sales           |              6 |       68000.00 |    408000.00 |
++---------+-----------------+----------------+----------------+--------------+
++--------+----------------+---------+------------+----------------+
+| emp_id | employee_name  | dept_id | manager_id | manager_name   |
++--------+----------------+---------+------------+----------------+
+|   1006 | Kabir Patel    |       1 |       NULL | NULL           |
+|   1001 | Adarsh Tiwari  |       1 |       1006 | Kabir Patel    |
+|   1002 | Aarav Sharma   |       1 |       1006 | Kabir Patel    |
+|   1003 | Ananya Verma   |       1 |       1006 | Kabir Patel    |
+|   1004 | Rohan Singh    |       1 |       1006 | Kabir Patel    |
+|   1005 | Isha Gupta     |       1 |       1006 | Kabir Patel    |
+|   1008 | Arjun Mehta    |       2 |       NULL | NULL           |
+|   1007 | Meera Joshi    |       2 |       1008 | Arjun Mehta    |
+|   1009 | Sana Khan      |       2 |       1008 | Arjun Mehta    |
+|   1010 | Dev Malhotra   |       2 |       1008 | Arjun Mehta    |
+|   1011 | Nisha Rao      |       2 |       1008 | Arjun Mehta    |
+|   1012 | Vikram Das     |       2 |       1008 | Arjun Mehta    |
+|   1015 | Tanya Kapoor   |       3 |       NULL | NULL           |
+|   1013 | Priya Nair     |       3 |       1015 | Tanya Kapoor   |
+|   1014 | Rahul Bose     |       3 |       1015 | Tanya Kapoor   |
+|   1016 | Yash Kulkarni  |       3 |       1015 | Tanya Kapoor   |
+|   1017 | Neha Sinha     |       3 |       1015 | Tanya Kapoor   |
+|   1018 | Amit Roy       |       3 |       1015 | Tanya Kapoor   |
+|   1021 | Pooja Mishra   |       4 |       NULL | NULL           |
+|   1019 | Simran Kaur    |       4 |       1021 | Pooja Mishra   |
+|   1020 | Kunal Shah     |       4 |       1021 | Pooja Mishra   |
+|   1022 | Sameer Ali     |       4 |       1021 | Pooja Mishra   |
+|   1023 | Ritu Bansal    |       4 |       1021 | Pooja Mishra   |
+|   1024 | Naveen Gill    |       4 |       1021 | Pooja Mishra   |
+|   1028 | Siddharth Jain |       5 |       NULL | NULL           |
+|   1025 | Aditi Sen      |       5 |       1028 | Siddharth Jain |
+|   1026 | Manav Arora    |       5 |       1028 | Siddharth Jain |
+|   1027 | Kavya Iyer     |       5 |       1028 | Siddharth Jain |
+|   1029 | Zoya Ahmed     |       5 |       1028 | Siddharth Jain |
+|   1030 | Aditya Menon   |       5 |       1028 | Siddharth Jain |
++--------+----------------+---------+------------+----------------+
++--------+---------------+----------+
+| emp_id | full_name     | salary   |
++--------+---------------+----------+
+|   1001 | Adarsh Tiwari | 68100.00 |
++--------+---------------+----------+
++---------+----------+--------------------------------+
+| dept_id | level_no | reporting_path                 |
++---------+----------+--------------------------------+
+|       1 |        0 | Kabir Patel                    |
+|       1 |        1 | Kabir Patel -> Aarav Sharma    |
+|       1 |        1 | Kabir Patel -> Adarsh Tiwari   |
+|       1 |        1 | Kabir Patel -> Ananya Verma    |
+|       1 |        1 | Kabir Patel -> Isha Gupta      |
+|       1 |        1 | Kabir Patel -> Rohan Singh     |
+|       2 |        0 | Arjun Mehta                    |
+|       2 |        1 | Arjun Mehta -> Dev Malhotra    |
+|       2 |        1 | Arjun Mehta -> Meera Joshi     |
+|       2 |        1 | Arjun Mehta -> Nisha Rao       |
+|       2 |        1 | Arjun Mehta -> Sana Khan       |
+|       2 |        1 | Arjun Mehta -> Vikram Das      |
+|       3 |        0 | Tanya Kapoor                   |
+|       3 |        1 | Tanya Kapoor -> Amit Roy       |
+|       3 |        1 | Tanya Kapoor -> Neha Sinha     |
+|       3 |        1 | Tanya Kapoor -> Priya Nair     |
+|       3 |        1 | Tanya Kapoor -> Rahul Bose     |
+|       3 |        1 | Tanya Kapoor -> Yash Kulkarni  |
+|       4 |        0 | Pooja Mishra                   |
+|       4 |        1 | Pooja Mishra -> Kunal Shah     |
+|       4 |        1 | Pooja Mishra -> Naveen Gill    |
+|       4 |        1 | Pooja Mishra -> Ritu Bansal    |
+|       4 |        1 | Pooja Mishra -> Sameer Ali     |
+|       4 |        1 | Pooja Mishra -> Simran Kaur    |
+|       5 |        0 | Siddharth Jain                 |
+|       5 |        1 | Siddharth Jain -> Aditi Sen    |
+|       5 |        1 | Siddharth Jain -> Aditya Menon |
+|       5 |        1 | Siddharth Jain -> Kavya Iyer   |
+|       5 |        1 | Siddharth Jain -> Manav Arora  |
+|       5 |        1 | Siddharth Jain -> Zoya Ahmed   |
++---------+----------+--------------------------------+
