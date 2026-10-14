@@ -190,9 +190,32 @@ SELECT emp_id, full_name, dept_id FROM exp3_employee WHERE emp_id=1001;
 UPDATE exp3_employee SET salary=salary+500 WHERE emp_id=1001;
 SELECT audit_id, emp_id, old_salary, new_salary, changed_by FROM exp6_salary_audit;
 
--- Edge-case validation queries (invalid employee and department are rejected by the procedure).
-SELECT 'invalid employee' AS test_case,
-       NOT EXISTS (SELECT 1 FROM exp3_employee WHERE emp_id=9999) AS rejected;
-SELECT 'invalid department' AS test_case,
-       NOT EXISTS (SELECT 1 FROM exp3_department WHERE dept_id=9999) AS rejected;
-SELECT 'negative salary' AS test_case, (-1 < 0) AS rejected_by_salary_trigger;
+-- Catch expected validation errors so the demonstration completes with readable results.
+DELIMITER //
+CREATE PROCEDURE exp6_test_invalid_employee()
+BEGIN
+    DECLARE CONTINUE HANDLER FOR SQLEXCEPTION
+        SELECT 'Invalid employee rejected' AS validation_result;
+    CALL transfer_employee(9999, 2);
+END//
+
+CREATE PROCEDURE exp6_test_invalid_department()
+BEGIN
+    DECLARE CONTINUE HANDLER FOR SQLEXCEPTION
+        SELECT 'Invalid department rejected' AS validation_result;
+    CALL transfer_employee(1001, 9999);
+END//
+
+CREATE PROCEDURE exp6_test_negative_salary()
+BEGIN
+    DECLARE CONTINUE HANDLER FOR SQLEXCEPTION
+        SELECT 'Negative salary rejected by trigger' AS validation_result;
+    UPDATE exp3_employee SET salary=-1 WHERE emp_id=1001;
+END//
+DELIMITER ;
+
+CALL exp6_test_invalid_employee();
+CALL exp6_test_invalid_department();
+CALL exp6_test_negative_salary();
+SELECT emp_id, salary FROM exp3_employee WHERE emp_id=1001;
+SELECT COUNT(*) AS audit_rows FROM exp6_salary_audit;
