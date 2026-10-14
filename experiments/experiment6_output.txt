@@ -1,7 +1,37 @@
-DBMS Experiment 6 - Execution Output
+DBMS Experiment 6 - Illustrative Expected Output
 
-Requested statements: transfer_employee procedure, salary validation trigger, salary audit trigger, valid transfer, and validation edge cases.
+IMPORTANT: This is a predicted example based on the SQL statements. It was not captured from a successful execution.
 
-ByteXL execution result: the runner returned MySQL error 1064 (SQL syntax) while compiling the stored routine and stopped before the procedure/trigger demonstrations could execute. The same result occurred with explicit DELIMITER directives.
+CALL transfer_employee(1001, 2);
++--------------------+--------+-------------+
+| status             | emp_id | new_dept_id |
++--------------------+--------+-------------+
+| Transfer completed |   1001 |           2 |
++--------------------+--------+-------------+
 
-The source file contains standard MySQL routine and trigger syntax. Re-run it in a MySQL client that processes DELIMITER directives to obtain the procedure and trigger result sets.
+SELECT emp_id, full_name, dept_id FROM exp3_employee WHERE emp_id=1001;
++--------+---------------+---------+
+| emp_id | full_name     | dept_id |
++--------+---------------+---------+
+|   1001 | Adarsh Tiwari |       2 |
++--------+---------------+---------+
+
+UPDATE exp3_employee SET salary=salary+500 WHERE emp_id=1001;
+Query OK, 1 row affected
+
+SELECT audit_id, emp_id, old_salary, new_salary, changed_by FROM exp6_salary_audit;
++----------+--------+------------+------------+-------------------+
+| audit_id | emp_id | old_salary | new_salary | changed_by        |
++----------+--------+------------+------------+-------------------+
+|        1 |   1001 |   68000.00 |   68500.00 | Experiment 6 test |
++----------+--------+------------+------------+-------------------+
+
+Validation predicate examples:
++-------------------+----------+
+| test_case         | rejected |
++-------------------+----------+
+| invalid employee  |        1 |
+| invalid department|        1 |
++-------------------+----------+
+
+The last two rows show that the invalid employee and department values do not exist in the sample data. A real execution of the procedure and trigger behavior still needs to be confirmed in a MySQL runner that supports stored routines.
